@@ -1,5 +1,5 @@
 #!/bin/sh
-
+bwa index Saccharomyces_sort_index_merge.sh
 for n in {1..2}
 do
 	bwa mem -R '@RG\tID:'"$n"'\tLB:library\tPL:Illumina\tPU:lane'"$n"'\tSM:yeast' \
